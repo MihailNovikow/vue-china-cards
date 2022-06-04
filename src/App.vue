@@ -662,22 +662,27 @@ cards: [
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
 .page>* {
 background: #AFB9FF;
 }
-
 .bg-white {
-  width: 950px;
-height: 3651px;
-left: 485px;
-top: 177px;
-
-background: #F9F9F9;
-border-radius: 21px;
+    display: flex;
+    /* width: 950px; */
+    height: 3651px;
+    left: 485px;
+    top: 177px;
+    background: #F9F9F9;
+    border-radius: 21px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .grid {
-    padding-left: 41px;
-    padding-right: 66px;
+    padding-left: 50px;
+    padding-right: 55px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(27, 1fr);
@@ -685,11 +690,11 @@ border-radius: 21px;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     /* width: 950px; */
-    /* height: 3651px; */
+    height: 3500px;
     /* left: 485px; */
     /* top: 177px; */
     margin-top: 45px;
-    background: #F9F9F9;
+    background: transparent;
     /* border-radius: 21px; */
     justify-items: center;
     align-items: center;

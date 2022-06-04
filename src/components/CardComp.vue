@@ -24,16 +24,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
-.bg-white {
-    position: absolute;
-    width: 950px;
-    height: 3651px;
-    left: 485px;
-    top: 177px;
-
-    background: #F9F9F9;
-    border-radius: 21px;
-}
 .card-container {
     display: flex;
     width: 88px;
@@ -59,7 +49,7 @@ export default {
 .card-container-top {
     display: flex;
     justify-content: flex-start;
-    background-color: #f9f9f9;
+    background-color: transparent;
 }
 .card-container-rg-small {
     display: flex;
@@ -80,6 +70,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: -3px;
+    margin-left: -4px;
     background-color: #f9f9f9;
 }
 .card-num-left {
@@ -152,20 +143,20 @@ line-height: 16px;
 background: #F9F9F9;
 color: #383D63;
 }
-    .card-symbol {
-        width: 24px;
-        height: 28px;
-        left: 1319px;
-        top: 355px;
-
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-background: #F9F9F9;
-        color: #383D63;
-    }
+.card-symbol {
+    margin-bottom: 18px;
+    width: 24px;
+    height: 28px;
+    left: 1319px;
+    top: 355px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    background: #F9F9F9;
+    color: #383D63;
+}
 .card-text {
     padding-bottom: 5px;
     display: flex;
@@ -174,7 +165,7 @@ background: #F9F9F9;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    background: #F9F9F9;
+    background: transparent;
     color: #383D63;
     justify-content: center;
 }

@@ -31,23 +31,20 @@ export default {
   top: 38px;
 
 }
-
 .nav {
-  margin-left: 500px;
-  width: 950px;
-  display: flex;
-  list-style-type: none;
-  justify-content: space-evenly;
-  padding-left: 10px;
-  background: #AFB9FF;
-  height: 120px;
-  left: 0px;
-  /* top: 200px; */
-  flex-wrap: nowrap;
-  align-items: center;
-  /* width: 1440px; */
+    /* margin-left: 500px; */
+    /* width: 950px; */
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    /* padding-left: 10px; */
+    background: #AFB9FF;
+    height: 120px;
+    left: 0px;
+    /* top: 200px; */
+    align-items: center;
+    /* width: 1440px; */
 }
-
 .nav>li {
   display: flex;
   margin-left: 50px;
