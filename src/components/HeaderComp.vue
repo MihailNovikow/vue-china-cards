@@ -23,27 +23,35 @@ export default {
 * {
   background: #AFB9FF;
 }
-
-.header-logo>.header-logo-img {
-  width: 129px;
-  height: 50px;
-  left: 485px;
-  top: 38px;
-
+.page {
+    display: flex;
+    align-items: center;
+    background: #AFB9FF;
+    justify-content: center;
+}
+.header-logo-img {
+    margin-right: 190px;
+    width: 129px;
+    height: 50px;
+    left: 485px;
+    top: 38px;
 }
 .nav {
-    /* margin-left: 500px; */
+    margin-top: 37px;
+    margin-bottom: 90px;
+    /* margin-left: 160px; */
+    /* margin-right: 160px; */
     /* width: 950px; */
     display: flex;
     list-style-type: none;
-    justify-content: center;
     /* padding-left: 10px; */
     background: #AFB9FF;
     height: 120px;
     left: 0px;
     /* top: 200px; */
-    align-items: center;
     /* width: 1440px; */
+    align-items: center;
+    justify-content: center;
 }
 .nav>li {
   display: flex;

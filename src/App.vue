@@ -670,15 +670,17 @@ background: #AFB9FF;
 }
 .bg-white {
     display: flex;
-    /* width: 950px; */
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    width: 950px;
     height: 3651px;
     left: 485px;
     top: 177px;
     background: #F9F9F9;
     border-radius: 21px;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 .grid {
     padding-left: 50px;
@@ -700,7 +702,8 @@ background: #AFB9FF;
     align-items: center;
 }
 .title {
-    margin-left: 57px;
+    display: flex;
+    margin-right: 325px;
     margin-top: 78px;
     display: flex;
     font-family: 'Montserrat Alternates';
@@ -710,7 +713,6 @@ background: #AFB9FF;
     line-height: 29px;
     background: #F9F9F9;
     color: #373C65;
-    justify-content: flex-start;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600&family=Roboto&display=swap');
