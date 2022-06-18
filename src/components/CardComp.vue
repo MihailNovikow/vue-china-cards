@@ -1,29 +1,33 @@
 <template>
-<div class="card-container">
-  <div class="card-container-top">
-					<div class="card-num-left">1
-					<div class="card-container-rg-small"><div class="card-rg-small">
-						<div class="card-num-right">1
-					</div></div></div></div></div> 
-					<div class="card-symbol-small">yī</div>
-					<div class="card-symbol">一</div>
-					<div class="card-text">единица</div>
-		</div>
+    <div class="card-container">
+        <div class="card-container-top">
+            <div class="card-num-left">1
+                <div class="card-container-rg-small">
+                    <div class="card-rg-small">
+                        <div class="card-num-right">1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-symbol-small">yī</div>
+        <div class="card-symbol">一</div>
+        <div class="card-text">единица</div>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'CardComp',
-  
-  props: {
-    
-  }
+    name: 'CardComp',
+
+    props: {
+
+    }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-
 .card-container {
     display: flex;
     width: 88px;
@@ -36,6 +40,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .title {
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -43,20 +48,22 @@ export default {
     font-size: 24px;
     line-height: 29px;
     background: #F9F9F9;
-
     color: #373C65;
 }
+
 .card-container-top {
     display: flex;
     justify-content: flex-start;
     background-color: transparent;
 }
+
 .card-container-rg-small {
     display: flex;
     margin-left: 53px;
     margin-top: -2px;
     background-color: transparent;
 }
+
 .card-rg-small {
     box-sizing: border-box;
     display: flex;
@@ -73,6 +80,7 @@ export default {
     margin-left: -4px;
     background-color: #f9f9f9;
 }
+
 .card-num-left {
     margin-top: 3px;
     margin-left: 3px;
@@ -90,6 +98,7 @@ export default {
     background: #F9F9F9;
     align-items: flex-start;
 }
+
 .card-symbol {
     margin-left: 32px;
     display: flex;
@@ -105,6 +114,7 @@ export default {
     background: #F9F9F9;
     color: #383D63;
 }
+
 .card-symbol-small {
     margin-left: 3px;
     display: flex;
@@ -118,6 +128,7 @@ export default {
     justify-content: flex-start;
     align-items: center;
 }
+
 .title {
     font-family: 'Montserrat Alternates';
     font-style: normal;
@@ -131,18 +142,19 @@ export default {
 
 .card-num-right {
     width: 8px;
-height: 16px;
-left: 1358px;
-top: 323px;
+    height: 16px;
+    left: 1358px;
+    top: 323px;
 
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-background: #F9F9F9;
-color: #383D63;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    background: #F9F9F9;
+    color: #383D63;
 }
+
 .card-symbol {
     margin-bottom: 18px;
     width: 24px;
@@ -157,6 +169,7 @@ color: #383D63;
     background: #F9F9F9;
     color: #383D63;
 }
+
 .card-text {
     padding-bottom: 5px;
     display: flex;

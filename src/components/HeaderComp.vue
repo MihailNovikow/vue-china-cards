@@ -2,12 +2,14 @@
   <div class="page">
     <nav>
       <ul class="nav"><img class="header-logo-img" src="../assets/logo.png">
-        <li><a href="#">Тренажеры</a></li>
-        <li><a href="#">О Китае</a></li>
-        <li><a href="#">Личный кабинет</a></li>
+        <div class="li-cont">
+          <li><a href="#">Тренажеры</a></li>
+          <li><a href="#">О Китае</a></li>
+          <li><a href="#">Личный кабинет</a></li>
+        </div>
       </ul>
     </nav>
-   </div>
+  </div>
 </template>
 <script>
 export default {
@@ -23,56 +25,68 @@ export default {
 * {
   background: #AFB9FF;
 }
-.page {
-    display: flex;
-    align-items: center;
-    background: #AFB9FF;
-    justify-content: center;
-}
+
+
+
 .header-logo-img {
-    margin-right: 190px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
     width: 129px;
     height: 50px;
-    left: 485px;
-    top: 38px;
-}
-.nav {
-    margin-top: 37px;
-    margin-bottom: 90px;
-    /* margin-left: 160px; */
-    /* margin-right: 160px; */
-    /* width: 950px; */
-    display: flex;
-    list-style-type: none;
-    /* padding-left: 10px; */
-    background: #AFB9FF;
-    height: 120px;
-    left: 0px;
-    /* top: 200px; */
-    /* width: 1440px; */
-    align-items: center;
-    justify-content: center;
-}
-.nav>li {
-  display: flex;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
-.nav>li>a {
+.nav {
+  max-width: 960px;
+  margin-top: 37px;
+  margin-bottom: 90px;
+  display: flex;
+  list-style-type: none;
+  background: #AFB9FF;
+  align-items: center;
+  justify-content: center;
+}
+
+.li-cont {
+    margin-left: 344px;
+    width: 476px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+a {
   font-family: 'Montserrat Alternates';
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
-
-  text-decoration: none;
+  position: relative;
   color: #FFFFFF;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
 }
 
-a:hover {
-  opacity: 0.8;
-  background: #5f994d;
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  margin-top: 7px;
+  background-color: #FFFFFF;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+a:focus:after,
+a:hover:after {
+  width: 100%;
 }
 </style>
